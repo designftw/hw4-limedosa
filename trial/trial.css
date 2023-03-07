@@ -1,0 +1,72 @@
+
+body {
+  /* background-image: linear-gradient(
+  230deg,
+  hsl(240deg 100% 20%) 15%,
+  hsl(311deg 100% 25%) 55%,
+  hsl(334deg 100% 40%) 69%,
+  hsl(6deg 98% 61%) 78%,
+  hsl(37deg 100% 50%) 85%,
+  hsl(55deg 100% 50%) 89%,
+  hsl(46deg 100% 50%) 92%,
+  hsl(35deg 100% 53%) 94%,
+  hsl(21deg 99% 58%) 96%,
+  hsl(7deg 83% 57%) 97%,
+  hsl(349deg 71% 49%) 100%
+); */
+color: inherit;
+background-image: linear-gradient(
+    50deg,
+    #4ac1aa 52%,
+    rgba(255, 255, 255, 0) 99%
+  ),
+  radial-gradient(
+    circle at 114% 181%,
+    #39b9d1 17%,
+    rgba(255, 255, 255, 0) 52%
+  ),
+  radial-gradient(
+    ellipse at -161% -103%,
+    #c6e81e 25%,
+    rgba(255, 255, 255, 0) 39%
+  ),
+  radial-gradient(circle at 33% -51%, #c4739e 41%, rgba(255, 255, 255, 0) 92%),
+  linear-gradient(329deg, #663aa3 43%, rgba(255, 255, 255, 0) 67%);
+}
+
+/* 
+.gradient {
+  color: inherit;
+  background-image: linear-gradient(
+      50deg,
+      #4ac1aa 52%,
+      rgba(255, 255, 255, 0) 99%
+    ),
+    radial-gradient(
+      circle at 114% 181%,
+      #39b9d1 17%,
+      rgba(255, 255, 255, 0) 52%
+    ),
+    radial-gradient(
+      ellipse at -161% -103%,
+      #c6e81e 25%,
+      rgba(255, 255, 255, 0) 39%
+    ),
+    radial-gradient(circle at 33% -51%, #c4739e 41%, rgba(255, 255, 255, 0) 92%),
+    linear-gradient(329deg, #663aa3 43%, rgba(255, 255, 255, 0) 67%);
+} */
+
+/* .box {
+  position: relative;
+  transform-style: preserve-3d;
+}
+.box::before {
+  content: "";
+  position: absolute;	
+  inset: 0px;
+  background: conic-gradient(from 90deg at 40% -25%, #ffd700, #f79d03, #ee6907, #e6390a, #de0d0d, #d61039, #cf1261, #c71585, #cf1261, #d61039, #de0d0d, #ee6907, #f79d03, #ffd700, #ffd700, #ffd700);
+  filter: blur(10px);
+  transform: translate3d(2px,0px,-1px);
+  clip-path: polygon(-100vmax -100vmax,100vmax -100vmax,100vmax 100vmax,-100vmax 100vmax,-100vmax -100vmax,calc(0px - 2px) calc(0px - 0px),calc(0px - 2px) calc(100% - 0px - 0px),calc(100% - 2px - 0px) calc(100% - 0px - 0px),calc(100% - 2px - 0px) calc(0px - 0px),calc(0px - 2px) calc(0px - 0px));
+  pointer-events: none;
+} */

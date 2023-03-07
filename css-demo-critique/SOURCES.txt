@@ -1,0 +1,5 @@
+Sources used: W3Schools, Josh COmeau for gradient
+URL: https://www.w3schools.com/w3css/w3css_templates.asp
+I used this template for the css-demo.
+
+I used the https://www.joshwcomeau.com/gradient-generator/ for the background colors.
