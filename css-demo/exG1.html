@@ -5,8 +5,8 @@
     <title>CSS Demo: Example 1</title>
     <style>
       body{
-        background-image: linear-gradient(80deg, #f66352, purple, #ee6352);
-        font-size: 40px;
+        background-image: linear-gradient(90deg, #f66352, purple, #ee6352);
+        font-size: 30px;
         color: white;
       }
 
@@ -22,19 +22,6 @@
   </head>
 
   <body>
-    <!-- Basic usage -->
-
-    <div id="app_basic" v-bind:title="timestamp" class="experiment-block">{{ message }}</div>
-
-    <script>
-      new Vue({
-        el: "#app_basic",
-        data: {
-          message: "Example1: Uses linear gradiens, 3 colors, and 80 degrees.",
-          timestamp: `Timestamp ${new Date().toLocaleString()}`,
-        },
-      })
-    </script>
-    <!-- <iframe src="exampleGradien.html" width="100%" height="300px"></iframe> -->
+    <p>Example 1: Uses linear gradients, 3 colors, and 90 degrees. <br><br> Code:<br> background-image: linear-gradient(90deg, #f66352, purple, #ee6352)</p>
   </body>
 </html>

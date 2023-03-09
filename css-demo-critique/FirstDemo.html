@@ -40,8 +40,9 @@
             text-align: center;
             color: white;
         }
-        .w3-text-teal{
-            color:red;
+
+        .w3-text-teal {
+            color: red;
         }
 
         .w3-sidebar {
@@ -51,30 +52,31 @@
             bottom: 0;
             height: inherit;
         }
+
         body {
             background-image: linear-gradient(310deg,
-                hsl(0deg 0% 0%) 0%,
-                hsl(170deg 100% 2%) 21%,
-                hsl(175deg 100% 5%) 31%,
-                hsl(173deg 100% 7%) 37%,
-                hsl(175deg 100% 9%) 40%,
-                hsl(174deg 100% 11%) 43%,
-                hsl(175deg 100% 14%) 46%,
-                hsl(174deg 100% 16%) 48%,
-                hsl(175deg 100% 18%) 51%,
-                hsl(174deg 100% 20%) 54%,
-                hsl(175deg 100% 23%) 58%,
-                hsl(174deg 100% 25%) 65%,
-                hsl(175deg 100% 27%) 76%,
-                hsl(174deg 100% 29%) 100%);
+                    hsl(0deg 0% 0%) 0%,
+                    hsl(170deg 100% 2%) 21%,
+                    hsl(175deg 100% 5%) 31%,
+                    hsl(173deg 100% 7%) 37%,
+                    hsl(175deg 100% 9%) 40%,
+                    hsl(174deg 100% 11%) 43%,
+                    hsl(175deg 100% 14%) 46%,
+                    hsl(174deg 100% 16%) 48%,
+                    hsl(175deg 100% 18%) 51%,
+                    hsl(174deg 100% 20%) 54%,
+                    hsl(175deg 100% 23%) 58%,
+                    hsl(174deg 100% 25%) 65%,
+                    hsl(175deg 100% 27%) 76%,
+                    hsl(174deg 100% 29%) 100%);
             color: white !important;
-          }
+        }
 
         h1 {
             background-color: black;
         }
 
-        body*{
+        body* {
             color: white;
         }
     </style>
@@ -115,10 +117,12 @@
 
 
         <div class="w3-row w3-padding-64">
-            <div class="w3-twothird w3-container" style="color: white;" >
+            <div class="w3-twothird w3-container" style="color: white;">
                 FIRST DEMO:
-                <h1 class="w3-text-teal" style = "color: white;"> <a href="https://www.w3schools.com/w3css/tryw3css_templates_webpage.htm#"
-                        class="w3-bar-item w3-button w3-hide-small w3-hover-white">W3School: CSS and HTML Template Website(CLICK)</a>
+                <h1 class="w3-text-teal" style="color: white;"> <a
+                        href="https://www.w3schools.com/w3css/tryw3css_templates_webpage.htm#"
+                        class="w3-bar-item w3-button w3-hide-small w3-hover-white">W3School: CSS and HTML Template
+                        Website(CLICK)</a>
                 </h1>
                 <!-- <a href="https://fluid-typography.netlify.app/">Click for Fluid Typography Website</a> -->
                 <center>Picture of the website: </center>
@@ -134,57 +138,37 @@
 
                 <button id="toggleButton1">Usability Issues and solutions: </button>
                 <p id="paragraphToToggle">
-                    <u>Learnability: </u><br>This was one of the hardest websites I've had to learn to use.
-                    The UX and UI are lacking and nearly non-existing. This was clearly made for experienced users,
-                    because it doesn't allow for a beginner-friendly interaction. Its minimal design and usability
-                    highlight a huge issue. One big issue I found was the lack of control--that is users are unable to
-                    switch the font itself.<br><br>
-                    <u>Possible Upgrades: </u><br> One thing that can be changed is 
+                    <u>Learnability: </u><br>This website was extremely non-trivial to use. It didn't allow for a
+                    user-friendly interaction. Customizing any part of it was extremely hard. To better guage its
+                    shortcomings, I decided to use it myself. The current template right now is a costumized version of
+                    the css, which took a lot of time to acquire. It felt nearly impossible to edit the css in the
+                    template.<br><br>
+                    <u>Possible Upgrades: </u><br> One thing that can be changed is allowing users to get a tour of how
+                    to use the template. To increase learnability, users should be able to edit the css. This would
+                    include giving users a css file and an html file they can edit side by side in a CodePen manner.
                 </p>
 
                 <script src="script.js"></script>
 
-
-                <!-- <button id="toggleButton2">Usability Updated: </button>
-                <p id="paragraphToToggle2">Learnability: </p>
-
-                <script src="script.js"></script> 
-
-
-
             </div>
-        </div> -->
 
-
-
-
-        <!-- END MAIN -->
-    </div>
-
-    <script>
-        // Get the Sidebar
-        var mySidebar = document.getElementById("mySidebar");
-
-        // Get the DIV with overlay effect
-        var overlayBg = document.getElementById("myOverlay");
-
-        // Toggle between showing and hiding the sidebar, and add overlay effect
-        function w3_open() {
-            if (mySidebar.style.display === 'block') {
-                mySidebar.style.display = 'none';
-                overlayBg.style.display = "none";
-            } else {
-                mySidebar.style.display = 'block';
-                overlayBg.style.display = "block";
-            }
-        }
-
-        // Close the sidebar with the close button
-        function w3_close() {
-            mySidebar.style.display = "none";
-            overlayBg.style.display = "none";
-        }
-    </script>
+            <script>
+                var mySidebar = document.getElementById("mySidebar");
+                var overlayBg = document.getElementById("myOverlay");
+                function w3_open() {
+                    if (mySidebar.style.display === 'block') {
+                        mySidebar.style.display = 'none';
+                        overlayBg.style.display = "none";
+                    } else {
+                        mySidebar.style.display = 'block';
+                        overlayBg.style.display = "block";
+                    }
+                }
+                function w3_close() {
+                    mySidebar.style.display = "none";
+                    overlayBg.style.display = "none";
+                }
+            </script>
 
 </body>
 

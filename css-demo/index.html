@@ -1,57 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>CSS Demo</title>
-    <style>
-      body {
-        background-image: linear-gradient(
-          90deg,
+
+<head>
+  <meta charset="UTF-8" />
+  <title>CSS Demo</title>
+  <style>
+    body {
+      background-image: linear-gradient(90deg,
           #091f36,
           #4f5f76,
-          #9e363a,
-          #0f2862
-        );
-        color: white !important;
-      }
-    </style>
-    <!-- This is a development version of Vue.js! -->
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+          #0f2862);
+      color: white !important;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+</head>
 
-    <!-- import stylesheet -->
-    <link rel="stylesheet" href="styles.css" />
-
-    <!-- Google fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans"
-      rel="stylesheet"
-    />
-  </head>
-
-  <body>
-    <center><h1>Gradient Editor CSS:</h1></center>
-    <div id="app_basic" v-bind:title="timestamp" class="experiment-block">
-      {{ message }}
-    </div>
-
-    <script>
-      new Vue({
-        el: "#app_basic",
-        data: {
-          message: "CSS Shortcuts: Gradient Shortcuts",
-          <!-- message: "HI", -->
-          timestamp: `Timestamp ${new Date().toLocaleString()}`,
-        },
-      });
-    </script>
-    <iframe src="exG1.html" width="100%" height="100px"></iframe>
-    <iframe src="exG2.html" width="100%" height="100px"></iframe>
-    <iframe src="exG3.html" width="100%" height="100px"></iframe>
-    <iframe src="exG4.html" width="100%" height="100px"></iframe>
+<body>
+  <center>
+    <h1>Gradient Editor CSS (Linear Gradients): </h1>
+  </center>
+  <h2>In <a href="https://en.wikipedia.org/wiki/CSS">CSS</a>, we can use "background-image:"
+    to set the background color of the html page. Of note is that there's different types of
+    background-images such as: <br>
+    <li>linear=> make this with linear-gradient</li>
+    <li>radial=> make this with radical-gradient</li>
+    <li>conic=> make this with conic-gradient</li>
+    This page intends to allow users to create background colors using the linear-gradients.
+    Below are some examples of linear-gradients being used.
+  </h2>
+  <iframe src="exG1.html" width="100%" height="198px"></iframe>
+  <iframe src="exG2.html" width="100%" height="198px"></iframe>
+  <iframe src="exG3.html" width="100%" height="231.5px"></iframe>
+  <!-- <iframe src="exG4.html" width="100%" height="100px"></iframe>
     <iframe src="exG5.html" width="100%" height="100px"></iframe>
     <iframe src="exG6.html" width="100%" height="100px"></iframe>
-    <iframe src="exG7.html" width="100%" height="100px"></iframe>
+    <iframe src="exG7.html" width="100%" height="100px"></iframe> -->
+  <br><br><br><br>
+  <center><h1>TRY IT!</h1></center>
+  <iframe src="try.html" width="100%" height="330"></iframe>
+</body>
 
-    <iframe src="try.html" width="100%" height="750px"></iframe>
-  </body>
 </html>
