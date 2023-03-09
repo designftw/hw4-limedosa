@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue.js Boilerplate</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+
+  <!-- Create a container element for our Vue app -->
+  <div id="app">
+
+    <!-- Display the current value of the message data property -->
+    <p>{{ message }}</p>
+
+    <!-- Bind an input element to the message data property -->
+    <input v-model="message" type="text">
+
+  </div>
+
+  <script>
+    // Create a new Vue instance
+    var app = new Vue({
+      // Mount the instance to the container element with ID of 'app'
+      el: '#app',
+      // Define the data properties for the instance
+      data: {
+        message: 'Hello, Vue!'
+      }
+    });
+  </script>
+
+</body>
+</html>

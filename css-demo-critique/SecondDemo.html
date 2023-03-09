@@ -40,8 +40,9 @@
             text-align: center;
             color: white;
         }
-        .w3-text-teal{
-            color:red;
+
+        .w3-text-teal {
+            color: red;
         }
 
         .w3-sidebar {
@@ -55,19 +56,19 @@
         body {
             background-image: linear-gradient(310deg,
                     hsl(0deg 0% 0%) 0%,
-                    hsl(173deg 100% 3%) 21%,
-                    hsl(174deg 94% 7%) 31%,
-                    hsl(174deg 96% 10%) 37%,
-                    hsl(174deg 94% 14%) 40%,
-                    hsl(175deg 95% 17%) 43%,
-                    hsl(174deg 94% 20%) 46%,
-                    hsl(174deg 95% 24%) 48%,
-                    hsl(174deg 94% 27%) 51%,
-                    hsl(174deg 95% 30%) 54%,
-                    hsl(174deg 94% 34%) 58%,
-                    hsl(174deg 95% 37%) 65%,
-                    hsl(174deg 94% 40%) 76%,
-                    hsl(174deg 95% 44%) 100%);
+                    hsl(170deg 100% 2%) 21%,
+                    hsl(175deg 100% 5%) 31%,
+                    hsl(173deg 100% 7%) 37%,
+                    hsl(175deg 100% 9%) 40%,
+                    hsl(174deg 100% 11%) 43%,
+                    hsl(175deg 100% 14%) 46%,
+                    hsl(174deg 100% 16%) 48%,
+                    hsl(175deg 100% 18%) 51%,
+                    hsl(174deg 100% 20%) 54%,
+                    hsl(175deg 100% 23%) 58%,
+                    hsl(174deg 100% 25%) 65%,
+                    hsl(175deg 100% 27%) 76%,
+                    hsl(174deg 100% 29%) 100%);
             color: white !important;
         }
 
@@ -75,7 +76,7 @@
             background-color: black;
         }
 
-        body*{
+        body* {
             color: white;
         }
     </style>
@@ -116,9 +117,9 @@
 
 
         <div class="w3-row w3-padding-64">
-            <div class="w3-twothird w3-container" style="color: white;" >
+            <div class="w3-twothird w3-container" style="color: white;">
                 SECOND DEMO
-                <h1 class="w3-text-teal" style = "color: white;"> <a href="https://fluid-typography.netlify.app/"
+                <h1 class="w3-text-teal" style="color: white;"> <a href="https://fluid-typography.netlify.app/"
                         class="w3-bar-item w3-button w3-hide-small w3-hover-white">Fluid Typography Website(CLICK)</a>
                 </h1>
                 <!-- <a href="https://fluid-typography.netlify.app/">Click for Fluid Typography Website</a> -->
@@ -140,9 +141,29 @@
                     because it doesn't allow for a beginner-friendly interaction. Its minimal design and usability
                     highlight a huge issue. One big issue I found was the lack of control--that is users are unable to
                     switch the font itself.<br><br>
-                    <u>Possible Upgrades: </u><br> One thing that can be changed is 
+                    <u>Possible Upgrades: </u><br> One thing that can be changed is the apperance of the website to
+                    create a more pleasant user experience. The idea is to utilize design principles to lure users and
+                    ensure their user experience is pleasant enough to return to using the site. Some of these changes
+                    include:
+                    <li>changing the background color(for pure aesthetic purposes only)</li>
+                    <li>allowing users to change the font</li>
+                    <li>giving an example of what the site can do(video form would be useful to create a visual of how
+                        to use the site)</li>
+                    <!-- <li>clarify how to use it(i.e. allowing </li> -->
+                    <li>updating the buttons such that the rem and the px inputs can only be numbers(right now, users can write non-numerical characters for the values)</li>
+                    <li>allowing for a more beginner-friendly usage</li>
                 </p>
-
+                <ul>
+                    <li id="item1">changing the background color(for pure aesthetic purposes only) <button onclick="toggleItem('item1', this)">Toggle</button></li>
+                    <li id="item2">allowing users to change the font<button onclick="toggleItem('item2', this)">Toggle</button></li>
+                    <li id="item3">giving an example of what the site can do(video form would be useful to create a visual of how
+                        to use the site)<button onclick="toggleItem('item3', this)">Toggle</button></li>
+                    <li id="item4">updating the buttons such that the rem and the px inputs can only be numbers(right now, users can write non-numerical characters for the values) <button onclick="toggleItem('item4', this)">Toggle</button></li>
+                    <li id="item5">allowing for a more beginner-friendly usage <button onclick="toggleItem('item5', this)">Toggle</button></li>
+                    <!-- <li id="item6">List item 6 <button onclick="toggleItem('item6', this)">Toggle</button></li> -->
+                  </ul>
+                  
+                  
                 <script src="script.js"></script>
 
 
@@ -159,33 +180,33 @@
 
 
 
-        <!-- END MAIN -->
-    </div>
+                <!-- END MAIN -->
+            </div>
 
-    <script>
-        // Get the Sidebar
-        var mySidebar = document.getElementById("mySidebar");
+            <script>
+                // Get the Sidebar
+                var mySidebar = document.getElementById("mySidebar");
 
-        // Get the DIV with overlay effect
-        var overlayBg = document.getElementById("myOverlay");
+                // Get the DIV with overlay effect
+                var overlayBg = document.getElementById("myOverlay");
 
-        // Toggle between showing and hiding the sidebar, and add overlay effect
-        function w3_open() {
-            if (mySidebar.style.display === 'block') {
-                mySidebar.style.display = 'none';
-                overlayBg.style.display = "none";
-            } else {
-                mySidebar.style.display = 'block';
-                overlayBg.style.display = "block";
-            }
-        }
+                // Toggle between showing and hiding the sidebar, and add overlay effect
+                function w3_open() {
+                    if (mySidebar.style.display === 'block') {
+                        mySidebar.style.display = 'none';
+                        overlayBg.style.display = "none";
+                    } else {
+                        mySidebar.style.display = 'block';
+                        overlayBg.style.display = "block";
+                    }
+                }
 
-        // Close the sidebar with the close button
-        function w3_close() {
-            mySidebar.style.display = "none";
-            overlayBg.style.display = "none";
-        }
-    </script>
+                // Close the sidebar with the close button
+                function w3_close() {
+                    mySidebar.style.display = "none";
+                    overlayBg.style.display = "none";
+                }
+            </script>
 
 </body>
 

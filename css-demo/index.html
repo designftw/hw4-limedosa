@@ -1,10 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title><!-- CSS Feature Demo name here --></title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Demo</title>
+    <style>
+      body {
+        background-image: linear-gradient(
+          90deg,
+          #091f36,
+          #4f5f76,
+          #9e363a,
+          #0f2862
+        );
+        color: white !important;
+      }
+    </style>
+    <!-- This is a development version of Vue.js! -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
-</body>
+    <!-- import stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <center><h1>Gradient Editor CSS:</h1></center>
+    <div id="app_basic" v-bind:title="timestamp" class="experiment-block">
+      {{ message }}
+    </div>
+
+    <script>
+      new Vue({
+        el: "#app_basic",
+        data: {
+          message: "CSS Shortcuts: Gradient Shortcuts",
+          <!-- message: "HI", -->
+          timestamp: `Timestamp ${new Date().toLocaleString()}`,
+        },
+      });
+    </script>
+    <iframe src="exG1.html" width="100%" height="100px"></iframe>
+    <iframe src="exG2.html" width="100%" height="100px"></iframe>
+    <iframe src="exG3.html" width="100%" height="100px"></iframe>
+    <iframe src="exG4.html" width="100%" height="100px"></iframe>
+    <iframe src="exG5.html" width="100%" height="100px"></iframe>
+    <iframe src="exG6.html" width="100%" height="100px"></iframe>
+    <iframe src="exG7.html" width="100%" height="100px"></iframe>
+
+    <iframe src="try.html" width="100%" height="750px"></iframe>
+  </body>
 </html>

@@ -10,6 +10,16 @@ toggleButton.addEventListener('click', function() {
     paragraphToToggle.style.display = 'none';
   }
 });
+function toggleItem(itemId, button) {
+  var item = document.getElementById(itemId);
+  if (item.style.display === 'none') {
+    item.style.display = 'block';
+    button.remove();
+  } else {
+    item.style.display = 'none';
+  }
+}
+
 
 // // Toggles a second paragraph! :)
 // var toggleButton2 = document.getElementById('toggleButton2');
